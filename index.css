@@ -1,22 +1,103 @@
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color:black;
+.promo-banner {
+  display: block;
+  background: linear-gradient(90deg, #111, #222);
+  color: #f8d47a;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  animation: pulseGlow 2s infinite;
+  transition: background 0.3s ease-in-out;
 }
 
-/* Navbar */
+.promo-banner strong {
+  color: #fff;
+}
+
+.promo-banner:hover {
+  background: #333;
+  color: #fff5cc;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    text-shadow: 0 0 5px rgba(255, 221, 100, 0.7);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(255, 221, 100, 0.9);
+  }
+}
+
 .navbar-brand {
-    font-weight: bold;
-    font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #f8d47a !important; /* Luxury gold */
 }
 
+/* Make nav links premium */
+.navbar-nav .nav-link {
+  font-family: 'Playfair Display', serif;  /* Elegant font */
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #f8d47a !important; /* Gold color */
+  transition: 0.3s ease-in-out;
+  text-transform: uppercase;
+  margin-right: 15px;
+}
+
+/* Hover effect - subtle glow */
+.navbar-nav .nav-link:hover {
+  color: #fff5cc !important;
+  text-shadow: 0 2px 8px rgba(243, 242, 241, 0.4);
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  background-color: #111; /* Dark background */
+  border: 1px solid #f8f8f7;
+}
+.dropdown-menu .dropdown-item {
+  color: #f8d47a;
+}
+.dropdown-menu .dropdown-item:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+h1{
+    text-align: center;
+    color: gold;
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: gold;
+    font-family:cursive;
+   height: 150px;
+   padding-top: 35px;
+    background-color: rgb(216, 211, 211);
+}
+h6{
+    text-align: center;
+    background-color: gold;
+}
+nav{
+    background-color: black;
+}
+image{
+    size: 200px;
+}
 /* Hero Section */
 .hero {
     background: url('hero-bg.jpg') no-repeat center center/cover;
-    color: black;
+    color: yellow;
     padding: 100px 0;
     text-align: center;
-    background-color: aqua;
+    background-color: rgb(247, 245, 245);
+    margin-top: 10px;
 }
 
 .hero h1 {
@@ -49,5 +130,22 @@ body {
     color:white;
     padding: 15px 0;
     margin-top: 30px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.hero {
+  background: url('https://images.unsplash.com/photo-1594147088721-3a41cf05d2ad?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  color: white;
+  padding: 120px 0;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.footer {
+  background: #111;
+  color: #ccc;
 }
 
